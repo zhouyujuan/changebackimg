@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>换肤</title>
+    <link rel="stylesheet" type="text/css" href="css/indexChange.css">
+</head>
+
+<body id="changeBody">
+    <ul class="changeUl">
+        <li id="changeBack" onclick="changeback()">换背景
+            <div id="changeImage">
+                <img src="images/1.jpg" id="image1" onclick="clickImage('images/1.jpg')">
+                <img src="images/2.jpg" id="image2" onclick="clickImage('images/2.jpg')">
+            </div>
+        </li>
+        <li onclick="changeColor()" id="changeColoBack">换字体颜色
+            <div id="changeColordiv" >
+                <div onclick="changeChooseColor('#000079')">蓝色</div>
+                <div onclick="changeChooseColor('#467500')">绿色</div>
+                <div onclick="changeChooseColor('#FF0000')">红色</div>
+                <div onclick="changeChooseColor('#A6A600')">黄色</div>
+
+            </div>
+        </li>
+    </ul>
+    <div class="container">
+        <div class="header">
+            <p class="wordcolor">我是头部</p>
+        </div>
+        <div class="middle">
+            <ul>
+                <li class="wordcolor">百度</li>
+                <li class="wordcolor">百度</li>
+                <li class="wordcolor">百度</li>
+                <li class="wordcolor">百度</li>
+            </ul>
+            <ul>
+               <li class="wordcolor">百度</li>
+                <li class="wordcolor">百度</li>
+                <li class="wordcolor">百度</li>
+                <li class="wordcolor">百度</li>
+            </ul>
+        </div>
+        <div class="footer">
+        </div>
+    </div>
+    <script type="text/javascript" src="js/indexChange.js"></script>
+</body>
+
+</html>
